@@ -1142,8 +1142,6 @@
         params: {}  // Parameters which will be send by ajax for loading content
     };
 
-})();
-
 //Author      : @arboshiki
 /**
  * Generates random string of n length.
@@ -1152,7 +1150,7 @@
  * @param {int} n
  * @returns {String}
  */
-Math.randomString = function (n) {
+    Math.randomString = function (n) {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
@@ -1161,8 +1159,6 @@ Math.randomString = function (n) {
 
     return text;
 };
-var Lobibox = Lobibox || {};
-(function () {
 
     var LobiboxNotify = function (type, options) {
 //------------------------------------------------------------------------------
@@ -1577,7 +1573,5 @@ var Lobibox = Lobibox || {};
         }
     };
 
-	return Lobibox;
+    return Lobibox;
 });
-
-
