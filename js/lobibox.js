@@ -1,7 +1,16 @@
 //Author      : @arboshiki
-//create lobibox object
-var Lobibox = Lobibox || {};
-(function () {
+//Modularize Lobibox object
+(function (root, factory) { 
+  if(typeof define === "function" && define.amd) {
+    define(["jquery"], factory);
+  } else if(typeof module === "object" && module.exports) {
+      module.exports = factory(require("jquery"));
+  } else {
+    root.myModule = factory(root.jquery);
+  }
+}(this, function (jQuery) {
+
+    var Lobibox = {};
 
     Lobibox.counter = 0;
 //------------------------------------------------------------------------------
@@ -1567,6 +1576,8 @@ var Lobibox = Lobibox || {};
             }
         }
     };
-})();
+
+	return Lobibox;
+});
 
 
