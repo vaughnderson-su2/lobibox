@@ -1158,7 +1158,7 @@
         text += possible.charAt(Math.floor(Math.random() * possible.length));
 
     return text;
-};
+    };
 
     var LobiboxNotify = function (type, options) {
 //------------------------------------------------------------------------------
@@ -1574,4 +1574,4 @@
     };
 
     return Lobibox;
-});
+}));
